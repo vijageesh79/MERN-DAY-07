@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music World</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 25px;
+            margin: 20px;
+            border: 3px solid lightblue;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px #00f;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            background-color: gray;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #444;
+        }
+
+        .section {
+            margin: 30px;
+            border: 2px dashed white;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .section h2 {
+            border-left: 5px solid white;
+            padding-left: 10px;
+        }
+
+        .album-row {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .album {
+            min-width: 120px;
+            height: 160px;
+            border: 2px solid white;
+            border-radius: 10px;
+            overflow: hidden;
+            flex-shrink: 0;
+            background-color: white;
+        }
+
+        .album img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Optional scrollbar customization */
+        .album-row::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .album-row::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Music World</h1>
+        <div class="menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CATEGORY 1</a>
+            <a href="#">PRODUCTION</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">LOGIN</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>→ Latest Album ...</h2>
+        <div class="album-row">
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxx5-lgwLjDekCkkUBNhbVOVnZLVLQvhjzQ&s" alt="Album 1"></div>
+            <div class="album"><img src="https://c.saavncdn.com/837/Bollywood-Hits-Hindi-2019-20191004105334-500x500.jpg" alt="Album 2"></div>
+            <div class="album"><img src="https://preview.redd.it/which-bollywood-movie-has-best-album-ever-ill-start-v0-bcy0xmp88gxc1.jpeg?width=1150&format=pjpg&auto=webp&s=3b109ff61ce9bdc0d3f9f61e9a2a95bf802dc202" alt="Album 3"></div>
+            <div class="album"><img src="https://i.redd.it/i3bbp1flhfxc1.jpeg" alt="Album 4"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMCUB-JAxBrdfXHKunhGmz9MatykkrvMP7A&s" alt="Album 5"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdeeGJdhL429gjd1xZsUvaEET2VEtavvVerw&s" alt="Album 6"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wtl-k3F_LHwb4e2IiM97AMpglnXvr0k0Ng&s" alt="Album 7"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>→ TOP 10 Songs ...</h2>
+        <div class="album-row">
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9h1C0BtqFS_KUnNPB9nW5pom9cFhpEnTMA&s" alt="Song 1"></div>
+            <div class="album"><img src="https://images.ottplay.com/images/bhediya-box-office-collections-122.jpg" alt="Song 2"></div>
+            <div class="album"><img src="https://c.saavncdn.com/222/Raataan-Lambiyan-From-Shershaah--Hindi-2021-20210729181107-500x500.jpg" alt="Song 3"></div>
+            <div class="album"><img src="https://c.saavncdn.com/588/Aaj-Ki-Raat-Hindi-2024-20241017094017-500x500.jpg" alt="Song 4"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRys22FxfCvBduKlRGU0srQhZ5F-Ilde0Slbw&s" alt="Song 5"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeHAGn9YU-vstU5ACOlv3JdO-aed11VAN12Q&s" alt="Song 6"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>→ Top 10 Artist ...</h2>
+        <div class="album-row">
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTt6Iaa2Pp6LVRflpHGcCki2cX17EecUkjzA&s" alt="Artist 1"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJtjGzMCrXFg-YrWN1xIZ26hALQ2ThXHErQ&s" alt="Artist 2"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVQ5FrVA7D7o49s2zjgSkstA87mJtL7PZgA&s" alt="Artist 3"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWirqrzXAXVn7AXXZSe_1-CQkBxE2q0SPY2A&s" alt="Artist 4"></div>
+            <div class="album"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrivZqGNhtNcOFvPN8L_m5lcUd8fegDcrOFQ&s" alt="Artist 5"></div>
+        </div>
+    </div>
+</body>
+</html>
